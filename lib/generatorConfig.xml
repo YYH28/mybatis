@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="testTable" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/wuxianji" userId="root"
+			password="">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.wisdom.tea.po"
+			targetProject=".\src">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="com.wisdom.tea.mapper"
+			targetProject=".\src">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.wisdom.tea.mapper" targetProject=".\src">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+		<!--
+		    <table tableName="account_log"></table> 
+		    <table tableName="ad"></table> 
+			<table tableName="ad_position"></table> 
+			<table tableName="admin"></table> 
+			<table tableName="admin_log"></table>
+			<table tableName="admin_role"></table> 
+			<table tableName="area_region"></table> 
+			<table tableName="article"></table> 
+			<table tableName="article_cat_2"></table> 
+			<table tableName="article_cat"></table> 
+			<table tableName="brand"></table> 
+			<table tableName="cart"></table> 
+			<table tableName="comment"></table> 
+			<table tableName="config"></table> 
+			<table tableName="coupon"></table> 
+			<table tableName="coupon_list"></table>
+			 <table tableName="goods_category"></table> 
+			<table tableName="delivery_doc"></table> 
+			<table tableName="distribut_goods"></table> 
+			<table tableName="distribut_level"></table> 
+			<table tableName="expense_log"></table> 
+			<table tableName="feedback"></table> 
+			<table tableName="flash_sale"></table> 
+			<table tableName="friend_link"></table>
+			 <table tableName="goods"></table> 
+			<table tableName="goods_activity"></table> 
+			<table tableName="goods_attr"></table> 
+			<table tableName="goods_attribute"></table> 
+			<table tableName="goods_category"></table> 
+			<table tableName="goods_collect"></table>
+			 <table tableName="goods_consult"></table> 
+			<table tableName="goods_coupon"></table> 
+			<table tableName="goods_images"></table> 
+			<table tableName="goods_type"></table> 
+			<table tableName="goods_visit"></table> 
+			<table tableName="group_buy"></table> 
+			<table tableName="invoice"></table> 
+			<table tableName="message"></table>
+			 <table tableName="navigation"></table> 
+			<table tableName="oauth_users"></table>
+			 <table tableName="order"></table> 
+			<table tableName="order_action"></table> 
+			<table tableName="order_goods"></table> 
+			<table tableName="payment"></table> 
+			<table tableName="pick_up"></table> 
+			<table tableName="prom_goods"></table>
+			 <table tableName="prom_order"></table> 
+			 <table tableName="rebate_log"></table>
+			  <table tableName="recharge"></table> 
+			  <table tableName="region"></table>
+			   <table tableName="region2"></table>
+			 <table tableName="search_word"></table> 
+			<table tableName="return_goods"></table> 
+			<table tableName="shipping"></table> 
+			<table tableName="shipping_area"></table> 
+			<table tableName="sms_template"></table> 
+			<table tableName="sms_log"></table> 
+			<table tableName="spec"></table>
+			 <table tableName="spec_goods_price"></table>
+			 <table tableName="spec_image"></table> 
+			<table tableName="spec_item"></table> 
+			<table tableName="stock_log"></table> 
+			<table tableName="suppliers"></table> 
+			<table tableName="system_menu"></table> 
+			<table tableName="system_module"></table> 
+			<table tableName="team_activity"></table> 
+			<table tableName="team_follow"></table>
+			 <table tableName="team_found"></table> 
+			<table tableName="team_lottery"></table> 
+			<table tableName="topic"></table> 
+			<table tableName="user_address"></table> 
+			<table tableName="user_collection"></table> 
+			<table tableName="user_distribution"></table> 
+			<table tableName="user_extend"></table> 
+			<table tableName="user_level"></table> 
+			<table tableName="user_message"></table> 
+			<table tableName="user_store"></table> 
+			<table tableName="user_sign"></table> 
+			<table tableName="users"></table> 
+			<table tableName="virtual_shop"></table> 
+			<table tableName="vr_order_code"></table>
+			 <table tableName="withdrawals"></table> 
+		   <table tableName="system_module"></table>
+		
+		<table tableName="classes"></table>
+	<table tableName="criteria"></table>
+		<table tableName="teacherclasses"></table>
+		<table tableName="department"></table>
+		<table tableName="criteria"></table>
+		<table tableName="assess"></table>
+		<table tableName="student"></table>
+		<table tableName="teacher"></table>
+		<table tableName="supervisor"></table>
+		<table tableName="user"></table>
+			<table tableName="user_classes"></table>
+			<table tableName="assess"></table>
+			
+	
+			<table tableName="assess"></table>
+	
+
+	<table tableName="sys_user"></table>
+	
+    <table tableName="sys_role_user"></table>
+    <table tableName="sys_role"></table>
+    <table tableName="sys_permission"></table>
+    <table tableName="sys_permission_role"></table>
+     <table tableName="sys_menu"></table>
+     -->
+     <table tableName="news"></table>
+     <table tableName="news_cate"></table>
+	</context>
+</generatorConfiguration>
